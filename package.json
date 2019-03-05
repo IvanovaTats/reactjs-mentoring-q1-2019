@@ -1,0 +1,34 @@
+{
+  "name": "movieapp",
+  "version": "0.0.0",
+  "description": "Single page application, which will allow users to search the Movies DB database",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/bin/www",
+    "test": "test",
+    "serve": "node server/bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanovaTats/reactjs-mentoring-q1-2019.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Tats",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvanovaTats/reactjs-mentoring-q1-2019/issues"
+  },
+  "homepage": "https://github.com/IvanovaTats/reactjs-mentoring-q1-2019#readme"
+}
