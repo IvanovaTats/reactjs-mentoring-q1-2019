@@ -8,7 +8,7 @@
     "build": "webpack --config ./build/webpack.common.js",
     "precommit": "lint-staged",
     "start": "node server/bin/www",
-    "test": "test",
+    "test": "jest",
     "serve": "node server/bin/www",
     "lint": "eslint src/**/*.js src/**/*.jsx"
   },
@@ -33,6 +33,7 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "eslint": "^5.15.1",
     "eslint-config-airbnb": "^17.1.0",
@@ -47,7 +48,9 @@
     "lint-staged": "^8.1.5",
     "mini-css-extract-plugin": "^0.5.0",
     "prettier": "^1.16.4",
-    "pretty-quick": "^1.10.0"
+    "pretty-quick": "^1.10.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
   "repository": {
     "type": "git",
