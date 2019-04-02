@@ -6,13 +6,30 @@ module.exports = merge(common, {
   mode: 'production',
   devtool: 'source-map',
   optimization: {
-    splitChunks: {
-      chunks: 'all'
-    },
     minimizer: [
       new TerserPlugin({
-        cache: true
+        parallel: true,
+        cache: true,
+        terserOptions: {
+          output: {
+            comments: false
+          }
+        }
       })
+    ]
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
+          'css-loader',
+          'sass-loader'
+        ]
+      }
     ]
   }
 });

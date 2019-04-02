@@ -10,6 +10,14 @@ module.exports = {
     filename: 'bundle.js',
     path: path.join(process.cwd(), 'dist')
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'async',
+      minSize: 30000,
+      maxSize: 0,
+      minChunks: 1
+    }
+  },
   module: {
     rules: [
       {
@@ -18,16 +26,6 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader
-          },
-          'css-loader',
-          'sass-loader'
-        ]
       },
       {
         test: /\.html$/,
@@ -50,6 +48,9 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({
       react: 'react'
+    }),
+    new OptimizeCssAssetsPlugin({
+      assetNameRegExp: /\.optimize\.css$/g
     })
   ],
 
