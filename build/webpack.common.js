@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -12,10 +12,7 @@ module.exports = {
   },
   optimization: {
     splitChunks: {
-      chunks: 'async',
-      minSize: 30000,
-      maxSize: 0,
-      minChunks: 1
+      chunks: 'all'
     }
   },
   module: {
@@ -48,9 +45,6 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({
       react: 'react'
-    }),
-    new OptimizeCssAssetsPlugin({
-      assetNameRegExp: /\.optimize\.css$/g
     })
   ],
 

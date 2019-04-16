@@ -1,10 +1,11 @@
 const merge = require('webpack-merge');
 const TerserPlugin = require('terser-webpack-plugin');
 const common = require('./webpack.common.js');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
-  devtool: 'source-map',
+  devtool: 'hidden-source-map',
   optimization: {
     minimizer: [
       new TerserPlugin({
@@ -15,13 +16,16 @@ module.exports = merge(common, {
             comments: false
           }
         }
+      }),
+      new OptimizeCssAssetsPlugin({
+        assetNameRegExp: /\.optimize\.css$/g
       })
     ]
   },
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader
