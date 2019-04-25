@@ -4,6 +4,7 @@ import SearchField from '../inputs/searchField';
 import SearchButton from '../buttons/searchButton';
 import SeacrhFilter from '../buttons/searchFilterButtons';
 import SearchResult from './searchResult';
+import Error from '../error/error'
 
 class MainMenu extends React.Component {
   constructor(props) {
@@ -11,8 +12,14 @@ class MainMenu extends React.Component {
     this.state = {
       // seacrhFilter: 'Title',
       // searchFieldValue: '',
-      displayResultForm: false
+      displayResultForm: false,
+      hasError: false
     };
+  }
+
+  static getDerivedStateFromError() {
+    return this.setState({ hasError: true });
+
   }
 
   handleSubmit() {
@@ -22,6 +29,9 @@ class MainMenu extends React.Component {
   }
 
   render() {
+    if(this.state.hasError){
+      return <Error />
+    }
     return (
       <form className="main-menu-form">
         <div className="main-menu-input">

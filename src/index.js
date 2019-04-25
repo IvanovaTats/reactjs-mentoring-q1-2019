@@ -1,6 +1,21 @@
-const sum = (a, b) => a + b;
-const mul = (a, b) => a * b;
-const sub = (a, b) => a - b;
-const div = (a, b) => a / b;
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './styles/index.scss';
 
-export { sum, mul, sub, div };
+import MainMenu from './components/mainMenuPage/mainMenu'
+
+class App extends React.Component {
+
+    render() {
+        return (
+            <div>
+                <MainMenu />
+            </div>
+        )
+    }
+}
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+);

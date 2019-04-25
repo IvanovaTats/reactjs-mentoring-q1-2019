@@ -18,7 +18,7 @@ module.exports = merge(common, {
         }
       }),
       new OptimizeCssAssetsPlugin({
-        assetNameRegExp: /\.optimize\.css$/g
+        assetNameRegExp: /\.optimize\.scss$/g
       })
     ]
   },

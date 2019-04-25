@@ -22,5 +22,11 @@ module.exports = merge(common, {
   devServer: {
     contentBase: './dist',
     compress: true
-  }
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
+  ]
 });
