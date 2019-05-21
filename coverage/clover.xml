@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1557338490117" clover="3.2.0">
+  <project timestamp="1557338490117" name="All files">
+    <metrics statements="33" coveredstatements="26" conditionals="8" coveredconditionals="4" methods="17" coveredmethods="12" elements="58" coveredelements="42" complexity="0" loc="33" ncloc="33" packages="5" files="9" classes="9"/>
+    <package name="components">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="search.js" path="D:\repos\JS\reactjs-mentoring-q1-2019\src\components\search.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+      </file>
+      <file name="searchButtons.js" path="D:\repos\JS\reactjs-mentoring-q1-2019\src\components\searchButtons.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+      </file>
+      <file name="sort.js" path="D:\repos\JS\reactjs-mentoring-q1-2019\src\components\sort.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="containers.homePage">
+      <metrics statements="15" coveredstatements="9" conditionals="8" coveredconditionals="4" methods="10" coveredmethods="6"/>
+      <file name="homePage.js" path="D:\repos\JS\reactjs-mentoring-q1-2019\src\containers\homePage\homePage.js">
+        <metrics statements="12" coveredstatements="6" conditionals="6" coveredconditionals="3" methods="8" coveredmethods="4"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="28" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="40" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="43" count="3" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+      </file>
+      <file name="searchResult.js" path="D:\repos\JS\reactjs-mentoring-q1-2019\src\containers\homePage\searchResult.js">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="containers.notFoundPage">
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="notFoundMessage.js" path="D:\repos\JS\reactjs-mentoring-q1-2019\src\containers\notFoundPage\notFoundMessage.js">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="shared">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="poster.js" path="D:\repos\JS\reactjs-mentoring-q1-2019\src\shared\poster.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+      </file>
+      <file name="postersList.js" path="D:\repos\JS\reactjs-mentoring-q1-2019\src\shared\postersList.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="items.js" path="D:\repos\JS\reactjs-mentoring-q1-2019\src\utils\items.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

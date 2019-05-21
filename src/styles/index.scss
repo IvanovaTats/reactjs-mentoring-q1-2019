@@ -13,6 +13,8 @@
 }
 
 .result-form-buttons {
+  width: 75%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -28,13 +30,17 @@
 }
 
 .items-container {
+  width: 75%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 3%;
 }
 
 .item-poster {
   flex-basis: 30%;
+  margin-bottom: 1%;
 }
 
 .item-image {
@@ -42,6 +48,31 @@
 }
 
 .item-name_date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-details_form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.movie-details_search {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.movie-details_image {
+  max-width: 200px;
+  padding: 0 20px;
+}
+
+.movie-details_description {
+  flex-grow: 1;
+  padding: 0 20px;
+}
+
+.movie-details {
   display: flex;
   justify-content: space-between;
 }
